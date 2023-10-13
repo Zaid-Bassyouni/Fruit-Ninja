@@ -6,6 +6,7 @@ public class Blade : MonoBehaviour
 {
     private Camera mainCamera; // just to convert to world space ->our BLADE in world space but our mouse isn't.
     private Collider bladeCollider;
+    private TrailRenderer bladetrail;
     private bool slicing;
     public Vector3 direction {  get; private set; }
     public float minSliceVelocity = 0.01f;
@@ -14,6 +15,7 @@ public class Blade : MonoBehaviour
     {
         mainCamera = Camera.main;
         bladeCollider= GetComponent<Collider>();
+        bladetrail= GetComponentInChildren<TrailRenderer>();
     }
 
     private void OnEnable()
@@ -46,12 +48,16 @@ public class Blade : MonoBehaviour
         if (Input.GetMouseButton(0))    
         slicing=true;
         bladeCollider.enabled= true;
+        bladetrail.enabled= true;
+        bladetrail.Clear();
     }
 
     private void StopSlicing()
     {
         slicing=false;
         bladeCollider.enabled = false;
+        bladetrail.enabled = false;
+
 
     }
 
