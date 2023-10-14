@@ -24,11 +24,19 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2959977380357014721, guid: 60aad75aa3ac5b8418ebddc9eed4d8f9, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3401641808058046211, guid: 60aad75aa3ac5b8418ebddc9eed4d8f9, type: 3}
       propertyPath: m_Name
       value: Watermelon
       objectReference: {fileID: 0}
     - target: {fileID: 4097685880468961445, guid: 60aad75aa3ac5b8418ebddc9eed4d8f9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68ca70170c5bbaa4b886b803e98c45e4, type: 2}
+    - target: {fileID: 4555049711599946127, guid: 60aad75aa3ac5b8418ebddc9eed4d8f9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 68ca70170c5bbaa4b886b803e98c45e4, type: 2}
