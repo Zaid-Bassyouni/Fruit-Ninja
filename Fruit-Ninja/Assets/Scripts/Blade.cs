@@ -10,6 +10,7 @@ public class Blade : MonoBehaviour
     private bool slicing;
     public Vector3 direction {  get; private set; }
     public float minSliceVelocity = 0.01f;
+    public float SliceForce = 5f;
 
     private void Awake()
     {

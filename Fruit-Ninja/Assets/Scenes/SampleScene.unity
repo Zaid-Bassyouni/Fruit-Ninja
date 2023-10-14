@@ -215,6 +215,15 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
+        time: 0.0005828096
+        value: 0.999999
+        inSlope: -0.0034948199
+        outSlope: -0.0034948199
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 1
         value: 0
         inSlope: 0
@@ -398,12 +407,12 @@ MonoBehaviour:
   - {fileID: 1584063748855376820, guid: 179c14d91adf1a84ca44e0af84b4dc04, type: 3}
   - {fileID: 1584063748855376820, guid: 5c993439d2a2f75488a18c40d5b673cc, type: 3}
   - {fileID: 1584063748855376820, guid: d949c7ae255286a42ba244e29a2b06aa, type: 3}
-  minSpawnDelay: 0.25
-  maxSpawnDelay: 1
+  minSpawnDelay: 0.0003
+  maxSpawnDelay: 0.8
   minAngle: -15
-  maxAngle: 15
-  minForce: 18
-  maxForce: 22
+  maxAngle: 16.1
+  minForce: 18.8
+  maxForce: 23.8
   maxLifeTime: 5
 --- !u!65 &724823570
 BoxCollider:
@@ -472,6 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minSliceVelocity: 0.01
+  SliceForce: 5
 --- !u!135 &772451346
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -491,7 +501,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.9
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &772451347
 Transform:
